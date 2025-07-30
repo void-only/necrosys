@@ -4,6 +4,10 @@ from discord.ext import commands
 from keep_alive import keep_alive
 from dotenv import load_dotenv
 
+from keep_alive import keep_alive
+
+keep_alive()  # Prevent bot from sleeping on Render
+
 load_dotenv()
 
 intents = discord.Intents.default()
